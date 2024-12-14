@@ -41,7 +41,7 @@ function gotFile(file) {
     img = createImg(file.data, ImageReady).hide();
     classifier.classify(img, gotResult);
   } else {
-    console.log('No es una imagen');
+    alert('Imágen no válida');
   }
 }
 
@@ -62,3 +62,4 @@ function gotResult(results) {
   text(label, 10, height - 70);
   text(confidence, 10, height - 40);
 }
+
